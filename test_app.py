@@ -12,7 +12,7 @@ def test_home_route(client):
     response = client.get('/')
     assert response.status_code == 200
     data = json.loads(response.data)
-    assert "Library Book Management System" in data["message"]
+    assert "Incorrect Banner Content" in data["message"]
 
 def test_health_route(client):
     response = client.get('/health')
