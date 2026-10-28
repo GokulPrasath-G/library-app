@@ -11,7 +11,7 @@ BOOKS_DATABASE = [
 @app.route('/', methods=['GET'])
 def home():
     return jsonify({
-        "message": "Welcome to the University Library Book Management System API!",
+        "message": "Welcome to the University Library Book Management System API - V2 PROD ACTIVE!",
         "version": "1.0.0"
     }), 200
 
